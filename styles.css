@@ -1,0 +1,74 @@
+body {
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 15px;
+}
+
+.topNav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Styling the links inside the navigation bar */
+.topNav a {
+  float: left;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #fff;
+  font-size: 20px;
+}
+
+button,
+input {
+  margin: 10px 0;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.hover-box {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hover-box:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+.gallery img {
+  max-width: 250px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.tabs button {
+  margin-right: 5px;
+}
+
+.tabs div {
+  display: none;
+  padding: 10px;
+  background: #e0e0e0;
+  margin-top: 5px;
+}
+
+.tabs button.active + div {
+  display: block;
+}
+
+.feedback {
+  color: red;
+  font-size: 14px;
+}

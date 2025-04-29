@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events and Basic Interactivity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="topNav">
+          <a href="home" class="active">Home</a>
+          <a href="About">About</a>
+          <a href="Contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <h1>Interactive Demo</h1>
+
+    <!-- Event Handling -->
+    <button id="clickBtn">Click Me</button>
+    <div id="secret" class="hidden">🎉 You found the secret!</div>
+    <div class="hover-box">Hover me</div>
+    <input type="text" id="keypressInput" placeholder="Type something..." />
+
+    <!-- Interactive Elements -->
+    <button onclick="toggleColor(this)">Toggle Color</button>
+
+    <div class="gallery">
+      <img
+        src="https://robbreport.com/wp-content/uploads/2021/05/ssc01.jpg?w=1000"
+        alt="Image 1"
+      />
+      <img
+        src="https://assets.newatlas.com/dims4/default/be2e593/2147483647/strip/true/crop/1617x1078+0+1/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Ffastest-cars-2016-top-ten-141.jpg"
+        alt="Image 2"
+      />
+    </div>
+
+    <div class="tabs">
+      <button onclick="toggleTab(this)">Tab 1</button>
+      <div>Content for Tab 1</div>
+      <button onclick="toggleTab(this)">Tab 2</button>
+      <div>Content for Tab 2</div>
+    </div>
+
+    <!-- Form Validation -->
+    <form id="form">
+      <input type="email" id="email" placeholder="Enter email" required />
+      <div id="emailFeedback" class="feedback"></div>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password"
+        required
+        minlength="8"
+      />
+      <div id="passwordFeedback" class="feedback"></div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
